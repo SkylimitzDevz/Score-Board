@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Score Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="icons/fav.jpg" />
+  </head>
+  <body>
+    <h1 id="title">SCORE BOARD</h1>
+    <div class="soreboard">
+      <!-- -----Team 2----- -->
+      <div class="team-card">
+        <div class="team-name"><h1>TEAM A</h1></div>
+        <div class="score-card">
+          <div class="display"><h1 id="team1-score">0</h1></div>
+          <div class="btn-container">
+            <button onclick="add('A', 1)">+1</button>
+            <button onclick="add('A', 2)">+2</button>
+            <button onclick="add('A', 3)">+3</button>
+          </div>
+        </div>
+      </div>
+      <button id="reset-btn" onclick="reset()">RESET</button>
+      <!-- -----Team 2----- -->
+      <div class="team-card">
+        <div class="team-name"><h1>TEAM B</h1></div>
+        <div class="score-card">
+          <div class="display"><h1 id="team2-score">0</h1></div>
+          <div class="btn-container">
+            <button onclick="add('B', 1)">+1</button>
+            <button onclick="add('B', 2)">+2</button>
+            <button onclick="add('B', 3)">+3</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h3 id="credits">By <span>Ridma</span></h3>
+    <div class="info-btn-container">
+      <button id="github-code" class="git-btn">
+        See code <img src="icons/github-mark-white.png" alt="github-icon" />
+      </button>
+      <a href="https://github.com/SkylimitzDevz" target="_blank">
+        <button id="github-acc" class="git-btn">
+          Follow me <img src="icons/github-mark-white.png" alt="github-icon" />
+        </button>
+      </a>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
