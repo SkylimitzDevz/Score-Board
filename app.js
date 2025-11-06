@@ -30,5 +30,3 @@ function reset() {
     scoreA = 0
     scoreB = 0
 }
-
-
